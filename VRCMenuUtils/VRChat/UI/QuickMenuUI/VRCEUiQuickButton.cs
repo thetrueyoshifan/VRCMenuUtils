@@ -45,10 +45,10 @@ namespace VRChat.UI.QuickMenuUI
         public VRCEUiQuickButton(string name, Vector2 position, string text, string tooltip, Transform parent = null)
         {
             // Get required information
-            Transform orgControl = VRCEUi.InternalQuickMenu.ReportWorldButton;
+            Transform orgControl = VRCEUi.InternalQuickMenu.WorldsButton;
             if (orgControl == null)
             {
-                MVRCLogger.LogError("Could not find Report World button!");
+                MVRCLogger.LogError("Could not find Worlds button!");
                 Success = false;
                 return;
             }
@@ -57,7 +57,7 @@ namespace VRChat.UI.QuickMenuUI
             GameObject goControl = GameObject.Instantiate(orgControl.gameObject);
             if (goControl == null)
             {
-                MVRCLogger.LogError("Could not duplicate Report World button!");
+                MVRCLogger.LogError("Could not duplicate Worlds World button!");
                 Success = false;
                 return;
             }

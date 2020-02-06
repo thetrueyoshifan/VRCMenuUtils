@@ -464,7 +464,7 @@ namespace VRCMenuUtils
                 yield return null;
 
             // Get QuickMenu defaults
-            Vector2 quickMenuButtonPos = VRCEUi.InternalQuickMenu.ReportWorldButton.GetComponent<RectTransform>().localPosition;
+            Vector2 quickMenuButtonPos = VRCEUi.InternalQuickMenu.WorldsButton.GetComponent<RectTransform>().localPosition;
 
             // Load QuickMenu UI
             MVRCLogger.Log("Loading QuickMenu UI...");

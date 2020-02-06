@@ -262,20 +262,20 @@ namespace VRChat.UI
             #endregion
 
             #region ShortcutMenu Variables
-            private static Transform _reportWorldButton;
+            private static Transform _worldsButton;
             #endregion
             #region ShortcutMenu Properties
-            public static Transform ReportWorldButton
+            public static Transform WorldsButton
             {
                 get
                 {
-                    if(_reportWorldButton == null)
+                    if(_worldsButton == null)
                     {
                         if (ShortcutMenu == null)
                             return null;
-                        _reportWorldButton = ShortcutMenu.Find("ReportWorldButton");
+                        _worldsButton = ShortcutMenu.Find("ReportWorldButton");
                     }
-                    return _reportWorldButton;
+                    return _worldsButton;
                 }
             }
             #endregion
